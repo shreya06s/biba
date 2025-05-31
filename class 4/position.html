@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+    }
+        img{
+            width:250px;
+            height: 250px;
+        }
+        .container{
+            border: 2px solid black;
+            /* position: relative; */
+            height:1500px;
+        }
+        .image2{
+              position:relative;
+              top:50px;
+              left:50px;
+        }
+        .image3{
+            position: fixed; 
+            bottom:20px;
+            right:50px;
+        }
+        .image4{
+            position:sticky;
+            top:20px;
+        }
+.container2{
+    height: 1500px;
+    background-color: lightgoldenrodyellow;
+
+}
+.sticky-header{
+    background-color:black;
+    color: white;
+    padding: 10px;
+    font-size:20px;
+    position: sticky;
+    top:10px;
+}
+.filler-content{
+    height: 1500px;
+    background-color:white ;
+    padding-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image1"src="https://t3.ftcdn.net/jpg/03/17/76/14/360_F_317761488_lUO7Enkcskj6wppf9Ycf5zck5Jm2Y2b9.jpg">
+    <img  class="image2" src="https://t3.ftcdn.net/jpg/03/17/76/14/360_F_317761488_lUO7Enkcskj6wppf9Ycf5zck5Jm2Y2b9.jpg">
+    <img class="image3" src="https://t3.ftcdn.net/jpg/03/17/76/14/360_F_317761488_lUO7Enkcskj6wppf9Ycf5zck5Jm2Y2b9.jpg">
+    <img class="image4" src="https://t3.ftcdn.net/jpg/03/17/76/14/360_F_317761488_lUO7Enkcskj6wppf9Ycf5zck5Jm2Y2b9.jpg">
+         </div>
+         <div class="container2">
+            <h2 class="sticky-header">i am  a sticky header</h2>
+            <p>scroll down to see the header stick to the top</p>
+            <div class="filler-content">filler content </div>
+
+         </div>
+  
+</body>
+</html>
